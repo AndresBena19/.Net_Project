@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .boxy {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxy">
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1> @ViewData["Title"]</h1>
+                <h2>@ViewData["Message"]</h2>
+            </div>
+            <div class="container" >
+                <h2></h2>
+                <div class="row">
+                        <button type="button" class="btn btn-default btn-lg btn-block" onclick="location.href='@Url.Action("CrudForBooks","Home")'">CRUD for books</button>
+                        <button type="button" class="btn btn-default btn-lg btn-block">CRUD for type of books</button>
+                        
+                        <!--<div class="col-xs-6 col-lg-6 thumbnail">
+                        <a href="https://google.com">
+                            <img src="crudForBooks.jpg" alt="CRUD for books">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 thumbnail">
+                        <img src="crudForType.jpf" alt="CRUD for types of books">
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- it didnt worked <script src="Source/test.js"></script>-->
+</body>
+</html>

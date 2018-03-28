@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{9BBAE143-B088-478F-B321-A99D08BF7F87}|Default">
+  <MonoDevelop.Ide.ItemProperties.library PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/AddBook.cshtml">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" Line="32" Column="27" />
+      <File FileName="Views/Home/Index.cshtml" Line="26" Column="88" />
+      <File FileName="Views/Home/CrudForBooks.cshtml" Line="8" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="45" Column="41" />
+      <File FileName="Views/Home/AddBook.cshtml" Line="47" Column="128" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

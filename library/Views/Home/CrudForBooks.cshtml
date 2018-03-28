@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "CRUD for books";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .boxy {
+            padding-top: 15px;
+        }
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            <!--background-color: #8064A2 !important;-->
+        }
+    </style>
+</head>
+<body>
+    <div class="boxy">
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1> @ViewData["Title"]</h1>
+                <!--<h2>@ViewData["Message"]</h2>-->
+            </div>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="button" id="add" class="btn btn-primary btn-lg btn-block" onclick="location.href='@Url.Action("AddBook","Home")'">Add a book</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-primary btn-lg btn-block " onclick="location.href='@Url.Action("ListBooks","Home")'">List Books</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Delete a Book</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Book Details and Update</button>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- it didnt worked <script src="Source/test.js"></script>-->
+</body>
+</html>
