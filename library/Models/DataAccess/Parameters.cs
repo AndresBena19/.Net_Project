@@ -12,7 +12,6 @@ namespace library.Models.DataAccess
             public string nombre { get; set; }
             public string valor { get; set; }
 
-            public int Type { get; set; }
         }
     }
 }

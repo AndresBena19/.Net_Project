@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Create a Type of Book";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .boxy {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="boxy">
+        <div class="container">
+
+            <div class="jumbotron" style="background-color: #c4dbef !important">
+                <h1> @ViewData["Title"]</h1>
+                <h3>@ViewData["Message"]</h3>
+            </div>
+            @using (Html.BeginForm("ResultAddTypeBookForm", "Home", FormMethod.Post))
+            {
+                  <!--required isnt working-->
+                <div class="form-group">
+                    <label for="type">Type of book:</label>
+                    <input type="text" name="type" class="form-control" placeholder="Education" required>
+                </div>
+                <button type="submit" class="btn btn-default" id="submit" onclick="location.href='@Url.Action("Index","Home")'">Save it</button>
+            }
+        </div>
+    </div>
+</body>
+</html>

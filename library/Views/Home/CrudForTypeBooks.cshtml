@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Crud For Type of Books";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+
+        .boxy {
+            padding-top: 15px;
+        }
+
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            background-color: #92bfdf !important;
+            border: 0;
+        }
+
+        .box-button {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxy">
+        <div class="container">
+            <div class="jumbotron" style="background-color: #c4dbef !important">
+                <h1> @ViewData["Title"]</h1>
+                <!--<h2>@ViewData["Message"]</h2>-->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 box-button">
+                        <button type="button" id="add" class="btn btn-primary btn-lg btn-block" onclick="location.href='@Url.Action("AddTypeBookForm","Home")'">Create a Type of Book</button>
+                    </div>
+                    <div class="col-sm-4 box-button">
+                        <button type="button" class="btn btn-primary btn-lg btn-block " onclick="location.href='@Url.Action("ListType","Home")'">List Type of Books</button>
+                    </div>
+                    <div class="col-sm-4 box-button">
+                        <button type="button" class="btn btn-danger btn-lg btn-block " onclick="location.href='@Url.Action("DeleteTypeForm","Home")'">Delete a type of books</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- it didnt worked <script src="Source/test.js"></script>-->
+</body>
+</html>
+

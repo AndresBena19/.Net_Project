@@ -93,6 +93,15 @@
           "lib/netstandard1.6/Microsoft.AI.DependencyCollector.dll": {}
         }
       },
+      "Microsoft.AspNet.Razor/3.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
       "Microsoft.AspNetCore/2.0.1": {
         "type": "package",
         "dependencies": {
@@ -5219,6 +5228,17 @@
         "lib/netstandard1.6/Microsoft.AI.DependencyCollector.xml",
         "microsoft.applicationinsights.dependencycollector.2.4.1.nupkg.sha512",
         "microsoft.applicationinsights.dependencycollector.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.2.4": {
+      "sha512": "yqSkHUZNjR01MO2NbpXIfjlUEFJqw3xcT57Fc5orJryZlzgAVMUluOsDW2jyGkDg8/Xv91/RQ+0NNz4kinfGhQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.razor/3.2.4",
+      "files": [
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml",
+        "microsoft.aspnet.razor.3.2.4.nupkg.sha512",
+        "microsoft.aspnet.razor.nuspec"
       ]
     },
     "Microsoft.AspNetCore/2.0.1": {
@@ -13395,6 +13415,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Microsoft.AspNet.Razor >= 3.2.4",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.2",
@@ -13409,11 +13430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andresfelipe\\Desktop\\library\\library.csproj",
+      "projectUniqueName": "C:\\Users\\andresfelipe\\Desktop\\Celery\\library\\library.csproj",
       "projectName": "library",
-      "projectPath": "C:\\Users\\andresfelipe\\Desktop\\library\\library.csproj",
+      "projectPath": "C:\\Users\\andresfelipe\\Desktop\\Celery\\library\\library.csproj",
       "packagesPath": "C:\\Users\\andresfelipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andresfelipe\\Desktop\\library\\obj\\",
+      "outputPath": "C:\\Users\\andresfelipe\\Desktop\\Celery\\library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -13445,6 +13466,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.AspNet.Razor": {
+            "target": "Package",
+            "version": "[3.2.4, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"
@@ -13470,5 +13495,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.AspNet.Razor 3.2.4\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

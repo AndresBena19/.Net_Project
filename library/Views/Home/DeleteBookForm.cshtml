@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Delete a book";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .boxy {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxy">
+        <div class="container">
+                <h1> @ViewData["Title"]</h1>
+                <h3>@ViewData["Message"]</h3>
+            @using (Html.BeginForm("ResultDeleteBookForm", "Home", FormMethod.Post))
+            {
+                  <!--required isnt working-->
+                <div class="form-group">
+                    <label for="typeId">Enter The Name of the Book  that you want to delete</label>
+                    <input type="text" name="typeId" class="form-control" placeholder="Andres Design" required>
+                    <input type="text" name="forDelete" value="0" hidden/> <!--decide si es para eliminar un libro 0 o un tipo  1 de libro en el controler-->
+                </div>
+                <button type="submit" class="btn btn-default" id="submit" onclick="location.href='@Url.Action("Index","Home")'">Save it</button>
+            }
+        </div>
+    </div>
+</body>
+</html>

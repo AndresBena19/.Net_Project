@@ -1,5 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "List Books";
+    var Books = (Dictionary<string, Dictionary<string, string>>)ViewData["Books"];
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>ISBN</th>
+            <th>Autor</th>
+            <th>Fecha </th>
+            <th>Tipo</th>
+        </tr>
+
+        @foreach (var Book in Books)
+        {
+        <tr>
+            <th>@Book.Key</th>
+
+            @foreach (var DataBook in Book.Value)
+             {
+
+        <th>@DataBook.Value</th>
+                }
+        </tr>
+        }
+  
+
+
+
+
+
+
+    </table>
+</div>

@@ -14,7 +14,11 @@
             padding-top: 15px;
         }
         .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-            <!--background-color: #8064A2 !important;-->
+            background-color: #92bfdf !important;
+            border: 0;
+        }
+        .box-button{
+            padding: 5px;
         }
     </style>
 </head>
@@ -22,25 +26,25 @@
     <div class="boxy">
         <div class="container">
 
-            <div class="jumbotron">
+            <div class="jumbotron" style="background-color: #c4dbef !important">
                 <h1> @ViewData["Title"]</h1>
                 <!--<h2>@ViewData["Message"]</h2>-->
             </div>
             <div class="container" >
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 box-button">
                         <button type="button" id="add" class="btn btn-primary btn-lg btn-block" onclick="location.href='@Url.Action("AddBook","Home")'">Add a book</button>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 box-button">
                         <button type="button" class="btn btn-primary btn-lg btn-block " onclick="location.href='@Url.Action("ListBooks","Home")'">List Books</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Delete a Book</button>
+                    <div class="col-sm-6 box-button">
+                        <button type="button" class="btn btn-danger btn-lg btn-block" onclick="location.href='@Url.Action("DeleteBookForm","Home")'">Delete a Book</button>
                     </div>
-                    <div class="col-sm-6">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Book Details and Update</button>
+                    <div class="col-sm-6 box-button">
+                        <button type="button" class="btn btn-primary btn-danger btn-lg btn-block"  onclick="location.href='@Url.Action("UpdateBook","Home")'">Update a Book</button>
                     </div>         
                 </div>
             </div>

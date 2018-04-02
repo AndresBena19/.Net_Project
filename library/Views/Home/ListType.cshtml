@@ -1,0 +1,22 @@
+﻿@{
+    var TypeBooks = (Dictionary<string, string>)ViewData["TypesBooks"];
+}
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+        </tr>
+
+
+
+        @foreach (var x in TypeBooks)
+    {
+        <tr>
+            <th>@x.Key</th>
+            <th>@x.Value</th>
+        </tr>
+            }
+        </tr
+    </table>
+</div>
